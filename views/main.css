@@ -1,0 +1,15 @@
+body {
+  color: #333;
+  font-size: 17px; }
+
+.centred {
+  text-align: center; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+  a:hover {
+    color: #285f8f; }
+
+.red-text {
+  color: red; }

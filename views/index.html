@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Search Abstraction Layer</title>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+        <link type="text/css" rel="stylesheet" href="/main.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+        
+            <h1 class="centred">Image Search Abstraction Layer</h1>
+            
+            <h3>Start a search</h3>
+            
+            <p>To start a search, use the API <code class="red-text">https://doms-img.herokuapp.com/api/imagesearch/</code> followed
+                by your search term &mdash; so for instance, if you want to search for images of skiing you should use</p>
+                
+            <p><code class="red-text">https://doms-img.herokuapp.com/api/imagesearch/skiing</code></p>
+            
+            <p>You will receive a JSON array containing ten results.</p>
+            
+            <p>To change the set of results that are returned, you may append <code class="red-text">?offset=</code> to the
+                search API, together with the offset that you require. So if we wanted to see the next ten images of skiing,
+                we would use</p>
+                
+            <p><code class="red-text">https://doms-img.herokuapp.com/api/imagesearch/skiing?offset=10</code></p>
+            
+            <h3>Search history</h3>
+            
+            <p>If, instead of specifying the search string, you instead send the blank API ...</p>
+            
+            <p><code class="red-text">https://doms-img.herokuapp.com/api/imagesearch/</code></p>
+            
+            <p>... you will instead receive a JSON array containing details of the ten most recent searches that the
+                service has provided.</p>
+            
+            <div class="centred">
+                <p>Created by <a href="http://www.domwakeling.com" target="_blank">Dom Wakeling</a></p>
+                <p><em>Written as part of <a href="https://www.freecodecamp">FreeCodeCamp</a> Project 24</em></p>
+            </div>
+        
+        </div><!-- .container -->
+    </body>
+</html>

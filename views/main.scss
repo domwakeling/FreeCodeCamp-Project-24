@@ -1,0 +1,30 @@
+// general
+$color-general: #333;
+$font-size-general: 17px;
+
+// links
+$color-links : #337ab7;
+$color-links-hover: darken($color-links, 10%);
+$text-decoration-links: none;
+
+body {
+    color: $color-general;
+    font-size: $font-size-general;
+}
+
+.centred {
+    text-align: center;
+}
+
+a {
+    color: $color-links;
+    text-decoration: $text-decoration-links;
+    
+    &:hover {
+        color: $color-links-hover;
+    }
+}
+
+.red-text {
+    color: red;
+}
