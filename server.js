@@ -7,7 +7,7 @@ var mongo = require('mongodb').MongoClient;
 var portToUse = process.env.PORT || 8080;
 var mongoURL = process.env.MONGO_URL || require('./keys.js').MONGO_URL;
 var googAPI = process.env.API_KEY || require('./keys.js').API_KEY;
-var googCX = process.env.XC_KEY || require('./keys.js').CX_KEY;
+var googCX = process.env.CX_KEY || require('./keys.js').CX_KEY;
 
 var app = express();
 
