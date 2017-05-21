@@ -19,7 +19,6 @@ app.get('/api/imagesearch/*', function(req,res) {
     if (req.url == '/api/imagesearch/') {
         getSearchLog(res);
     } else {
-        res.end("For now, not doing this");
         formatSearch(req, res);                             // assume it's a valid search
     }
 });
